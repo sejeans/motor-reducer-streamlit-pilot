@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.Python
+
+# 가상환경
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 로그
+logs/
+*.log
+
+# Streamlit
+.streamlit/secrets.toml
+
+# 학습 부산물 (직렬화 모델은 포함 — 데모 즉시 실행용)
+# models/*.joblib  ← 포함
+
+# 노트북 캐시
+.ipynb_checkpoints/

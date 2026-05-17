@@ -1,0 +1,21 @@
+# 모터-감속기 MiniROCKET 분류 파이프라인 의존성
+# 마이너 버전까지 고정 — sktime/sklearn 메이저 변경 시 MiniRocket import 경로/API 깨짐 방지 (PLAN Phase 0)
+
+sktime==0.26.*
+scikit-learn==1.4.*
+pandas==2.1.*  # sktime 0.26.x requires pandas<2.2
+numpy==1.26.*
+joblib==1.4.*
+numba>=0.59,<0.61  # MiniRocket soft dependency — JIT 컴파일
+
+# Phase 1 이후 캐시/설정/진행률 표시용
+tqdm>=4.66,<5.0
+pyyaml>=6.0,<7.0
+pyarrow>=15.0,<17.0
+
+# Phase 2 테스트
+pytest>=8.0,<9.0
+
+# 파일럿 대시보드 (PRD v1.3) — Streamlit 단일 앱
+streamlit>=1.30,<2.0
+plotly>=5.18,<6.0
